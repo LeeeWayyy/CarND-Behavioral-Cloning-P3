@@ -170,6 +170,6 @@ if __name__ == '__main__':
         verbose=1)
 
     print('[INFO] Saving Model')
-    model.save('model.h5')
-    with open('model.json', 'w') as outfile:
+    model.save('model_nvidia.h5')
+    with open('model_nvidia.json', 'w') as outfile:
         json.dump(model.to_json(), outfile)
